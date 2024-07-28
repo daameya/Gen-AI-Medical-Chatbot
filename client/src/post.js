@@ -1,16 +1,18 @@
-export default function Post() {
+import {formatISO9075} from "date-fns";
+
+export default function Post({title,summary,cover,content,createdAt,author}) {
     return (
         <div className="post">
             <div className="image">
-                <img src="https://techcrunch.com/wp-content/uploads/2024/04/CMC_7737.jpg?resize=1280,853" alt="" />
+                <img src={'http://localhost:4000/'+cover} alt=""/>
             </div>
             <div className="texts">
-                <h2>Rabbit’s R1 is a little AI gadget that grows on you</h2>
+                <h2>{title}</h2>
                 <p className="info">
-                    <a className="author">Ameya Damle</a>
-                    <time> 2024-10-02 15:10</time>
+                    <a className="author">{author.username}</a>
+                    <time>{formatISO9075(new Date(createdAt))}</time>
                 </p>
-                <p className="summary">The $199 price point, touchscreen and funky Teenage Engineering design make it far more accessible than Humane’s Ai Pin</p>
+                <p className="summary">{summary}</p>
             </div>
         </div>
     );
