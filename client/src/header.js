@@ -31,7 +31,7 @@ export default function Header () {
                 {username && (
                     <>
                         <Link to="/create">Create new post</Link>
-                        <a onClick={logout}>Logout</a>
+                        <a onClick={logout}>Logout ({username})</a>
                     </>
                 )}
                 {!username && (
@@ -39,8 +39,7 @@ export default function Header () {
                         <Link to="/login">Login</Link>
                         <Link to="/register">Register</Link>        
                     </>
-                )}
-                
+                )}                
             </nav>
         </header>
     );
