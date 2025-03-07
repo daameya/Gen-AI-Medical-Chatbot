@@ -2,13 +2,13 @@
 
 <div id="header">
   <h1>
-    <img src="asset\medibot.jpg" alt="Medibot" width="1000" align="center"/>
+    <img src="asset\medibot.jpeg" alt="Medibot" width="1000" align="center"/>
   </h1>
 </div>
 
 <div id="header">
   <h1>
-    <img src="asset\medibot2.jpg" alt="Medibot2" width="1000" align="center"/>
+    <img src="asset\medibot2.jpeg" alt="Medibot2" width="1000" align="center"/>
   </h1>
 </div>
 
